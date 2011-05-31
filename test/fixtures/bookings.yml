@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  hotel: 
+  date: 
+  date: 
+  creditCardNumber: MyString
+  crediCardType: MyString
+  creditCardName: MyString
+  creditCardExpiryMonth: 1
+  creditCardExpiryYear: 1
+  smoking: false
+  beds: 1
+
+two:
+  user: 
+  hotel: 
+  date: 
+  date: 
+  creditCardNumber: MyString
+  crediCardType: MyString
+  creditCardName: MyString
+  creditCardExpiryMonth: 1
+  creditCardExpiryYear: 1
+  smoking: false
+  beds: 1

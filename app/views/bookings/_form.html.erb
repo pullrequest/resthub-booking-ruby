@@ -1,0 +1,61 @@
+<%= form_for(@booking) do |f| %>
+  <% if @booking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+      <ul>
+      <% @booking.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hotel_id %><br />
+    <%= f.text_field :hotel_id %>
+  </div>
+  <div class="field">
+    <%= f.label :checkinDate %><br />
+    <%= f.text_field :checkinDate %>
+  </div>
+  <div class="field">
+    <%= f.label :checkoutDate %><br />
+    <%= f.text_field :checkoutDate %>
+  </div>
+  <div class="field">
+    <%= f.label :creditCardNumber %><br />
+    <%= f.text_field :creditCardNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :crediCardType %><br />
+    <%= f.text_field :crediCardType %>
+  </div>
+  <div class="field">
+    <%= f.label :creditCardName %><br />
+    <%= f.text_field :creditCardName %>
+  </div>
+  <div class="field">
+    <%= f.label :creditCardExpiryMonth %><br />
+    <%= f.text_field :creditCardExpiryMonth %>
+  </div>
+  <div class="field">
+    <%= f.label :creditCardExpiryYear %><br />
+    <%= f.text_field :creditCardExpiryYear %>
+  </div>
+  <div class="field">
+    <%= f.label :smoking %><br />
+    <%= f.check_box :smoking %>
+  </div>
+  <div class="field">
+    <%= f.label :beds %><br />
+    <%= f.text_field :beds %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

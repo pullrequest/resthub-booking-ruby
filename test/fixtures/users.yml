@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  username: user1
+  fullname: User1 Test
+  email: user1@test.com
+  password: user1
+
+two:
+  username: user2
+  fullname: User2 Test
+  email: user2@test.com
+  password: user2

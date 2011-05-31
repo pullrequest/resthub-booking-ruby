@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: Hotel1
+  address: Some street
+  city: Some city
+  state: Some state
+  zip: 50987
+  country: Some country
+  start: 1
+  price: 1.5
+
+two:
+  name: Hotel2
+  address: Another street
+  city: Another city
+  state: Another state
+  zip: 74593
+  country: Another country
+  start: 2
+  price: 2.5

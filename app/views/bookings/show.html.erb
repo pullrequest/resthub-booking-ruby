@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User id:</b>
+  <%= @booking.user_id %>
+</p>
+
+<p>
+  <b>Hotel id:</b>
+  <%= @booking.hotel %>
+</p>
+
+<p>
+  <b>Checkin Date:</b>
+  <%= @booking.checkinDate %>
+</p>
+
+<p>
+  <b>Checkout Date:</b>
+  <%= @booking.checkoutDate %>
+</p>
+
+<p>
+  <b>Creditcardnumber:</b>
+  <%= @booking.creditCardNumber %>
+</p>
+
+<p>
+  <b>Credicardtype:</b>
+  <%= @booking.crediCardType %>
+</p>
+
+<p>
+  <b>Creditcardname:</b>
+  <%= @booking.creditCardName %>
+</p>
+
+<p>
+  <b>Creditcardexpirymonth:</b>
+  <%= @booking.creditCardExpiryMonth %>
+</p>
+
+<p>
+  <b>Creditcardexpiryyear:</b>
+  <%= @booking.creditCardExpiryYear %>
+</p>
+
+<p>
+  <b>Smoking:</b>
+  <%= @booking.smoking %>
+</p>
+
+<p>
+  <b>Beds:</b>
+  <%= @booking.beds %>
+</p>
+
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>
