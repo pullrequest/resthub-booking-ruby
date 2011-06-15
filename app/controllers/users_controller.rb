@@ -95,11 +95,11 @@ class UsersController < ApplicationController
     logger.debug 'Sent username: '+params.inspect
     @user = User.where('username = ?', params['username']).first;
     logger.debug 'Retreived user: '
-    logger.debug @user
+    logger.debug @user.inspect
     if( nil != @user && @user.password == params['password']) then
-      render :json => @user
+      render :json => @user.to_json(:except => ['password'])
     else
-      render :json => @user, :status => :forbidden
+      render :json => @user.to_json(:except => ['password']), :status => :forbidden
     end
   end
 
