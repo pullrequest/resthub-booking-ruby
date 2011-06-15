@@ -98,6 +98,6 @@ class BookingsController < ApplicationController
 
     @bookings = Booking.where('user_id=?',params[:id])
 
-    render :json => @bookings;
+    render :json => @bookings.to_json(:include => [:user,:hotel])
   end
 end
